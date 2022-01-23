@@ -1,0 +1,104 @@
+body{
+    margin: 10px;
+}
+/*Para que el navegador sea flexible y en una sola linea*/
+.container-nav{
+    display: flex;
+    width: 100%;
+}
+/*Imágen de pinterest en el navegador*/
+.img_pinterest{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 3px;
+    margin: 10px;
+}
+/*Cambio de tamaño de los dos botones inicio y el boton hoy*/
+.wt-nav{
+    height: 3rem;
+    margin: 3px;
+}
+/*Hover para el boton hoy y el boton grupal inicio*/
+.hoy:hover{
+    background-color: rgb(219, 219, 219);
+}
+/*Para poner la lupa en el buscador*/
+.buscar{
+    background-image: url(https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-4.png); /*Imagen de la lupa como background*/
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 1rem center ;/*para que aparezca a la izquierda*/
+    padding-left: 45px; /*para que la luba y la palabra "Buscar" no se choquen*/
+}
+/*Para el fondo y hover del buscador*/
+.bg-gray{
+    background-color: rgb(219, 219, 219);
+}
+.bg-gray:hover{
+    background-color: rgb(204, 179, 179);
+}
+/*Fondo de los botones de campana, mensajes y usuario con sus respectivos tamaños*/
+#bell{
+    background-image: url(https://image.pngaaa.com/640/91640-middle.png);
+    background-size: 40px 40px;
+}
+#msg{
+    background-image: url(https://icones.pro/wp-content/uploads/2021/05/icones-de-messagerie-gris.png);
+    background-size: 30px 30px;
+}
+#user{
+    background-image: url(https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur-gris.png);
+    background-size: 30px 30px;
+}
+/*Configuracion general del fondo de los botones de campana, mensajes y usuario*/
+.iconos{
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+/*Hover para los botones de campana, mensajes y usuario*/
+.iconos:hover{
+    filter: opacity(0.6);
+}
+/*Para la posisicion y hover del selector final*/
+.selector{
+    position: relative;
+    top: 20px;
+}
+.selector:hover{
+    background-color: rgb(199, 198, 198);
+}
+
+/* TABLERO DE IMÁGENES*/
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border:0px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    margin: 10px;
+}
+.grid-item{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    cursor: zoom-in;
+}
+.grid-item:hover{
+    filter: opacity(0.6);
+}
+/*Para que siga 2 columnas cuando la pantalla es menor a 540px
+@media(max-width:540px){
+    .flex-container{
+        max-width: 150px;
+    }
+}*/
